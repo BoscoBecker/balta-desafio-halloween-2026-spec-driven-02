@@ -32,6 +32,16 @@ Os endpoints delegam as regras ao `LinkService`. A infraestrutura implementa as 
 
 As decisões estão documentadas em [`docs/adr/`](docs/adr/README.md).
 
+### Executar com Docker Compose
+
+Com Docker instalado, inicie a API e construa a imagem com:
+
+```bash
+docker compose up --build
+```
+
+A API ficará disponível em `http://localhost:5208`. O banco SQLite é mantido no volume `urlshortener_data`.
+
 ### Rotas disponíveis
 
 | Método | Rota | Descrição |
